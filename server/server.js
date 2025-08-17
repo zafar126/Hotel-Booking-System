@@ -5,11 +5,13 @@ import { connect } from "mongoose";
 import connectDB from "./configs/db.js";
 import { clerkMiddleware } from '@clerk/express'
 import clerkWebhooks from "./controoers/ckerWebhooks.js";
-// tahar gand
+
 connectDB()
 
 const app = express();
 app.use(cors()); // Enable Cross-Origin Resource Sharing
+
+
 
 
 // middlewate
